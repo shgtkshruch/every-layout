@@ -1,0 +1,21 @@
+@import 'cluster';
+@import 'stack';
+@import 'sidebar';
+@import 'center';
+
+:root {
+  --space: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.label {
+  display: inline-block;
+  background-color: #ffc800;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.6rem;
+}

@@ -1,0 +1,24 @@
+@use "sass:math";
+
+$space-base: 8;
+
+[class^="l-cluster"] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@for $i from 1 to 4 {
+  $space: $i * $space-base;
+  $space-half: math.div($space, 2);
+
+  .l-cluster-#{$space} {
+    margin-right: #{$space-half * -1}px;
+    margin-left: #{$space-half * -1}px;
+
+    > * {
+      margin-right: #{$space-half}px;
+      margin-left: #{$space-half}px;
+    }
+  }
+}

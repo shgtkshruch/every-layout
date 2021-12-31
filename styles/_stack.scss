@@ -1,0 +1,9 @@
+.l-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.l-stack > * + * {
+  margin-top: calc(var(--space) * 2);
+}
+
